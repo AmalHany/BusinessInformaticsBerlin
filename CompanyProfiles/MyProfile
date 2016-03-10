@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Omar Fayez Company Profile </title>
+</head>
+<body style = "background-color:black;">
+<div style = "width:100%;">
+<div style ="float:left; width 30%;">
+<nav>
+<img src = "https://scontent-frt3-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12718277_10207026145544617_2496362440960291865_n.jpg?oh=63905bb2fee1248f87319c3bef778404&oe=57908805" alt = "Me" style = "width:100px"; height="100px;"> <br>
+Omar Fayez <br>
+	Student <br> 
+---------------------- <br>
+<img src = "http://images.clipartpanda.com/google-location-icon-location_black.png" alt = "Me" style = "width:15px"; height="15px;">Flenssburger Strasse 27, <br>
+Berlin, Germany. <br>
+<img src = "http://www.scambook.com/filehandler/company_logo/5901/lt.b329c24bcd7aeba27e6c18622e8316fdc0f9dc51342bcbe06a7b918656561db7.png" alt = "Me" style = "width:15px"; height="15px;">01207007021 <br>
+<img src = "http://core0.staticworld.net/images/article/2013/08/gmail-logo-100050086-gallery.png" alt = "Me" style = "width:15px"; height="15px;">omarfayez.20@gmail.com <br>
+<img src = "http://www.languageicon.org/LanguageIcon.jpg" alt = "Me" style = "width:15px"; height="15px;">English <br>
+<img src = "https://a.disquscdn.com/get?url=http%3A%2F%2Fsimpleicon.com%2Fwp-content%2Fuploads%2Flink-2.png&key=-rnY-X0c-N2GYxmKzOnShg" alt = "Me" style = "width:15px"; height="15px;"><a href = "https://www.fayezenterprise.com">www.fayezenterprise.com</a> 
+<br>
+<hr>
+<a href ="https://www.facebook.com/ofayez1">
+		<img src = "https://www.facebookbrand.com/img/fb-art.jpg" alt = "fblink" style = "width:15px"; height="15px;">
+		</a>
+<a href ="https://www.instagram.com">
+		<img src = "http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Multi-Color_Logo_thumbnail200.png" alt = "fblink" style = "width:15px"; height="15px;">
+		</a>
+<a href ="https://www.twitter.com">
+		<img src = "https://g.twimg.com/Twitter_logo_blue.png" style = "width:15px"; height="15px;">
+		</a>
+</nav>
+</div>
+
+
+<div id = "section" style="float:left; width 70%;">
+<h1> Background </h1> 
+<hr>
+ABOUT: 
+<p> Omar Fayez was born in the year 1995 in Cairo, at the age of 4 he resided in San Diego, California until 2001. He is currently studying abroad in Berlin, Germany, studying Courses that are bound to end his life. His interests includes Novels, Not coding, and Movies.</p>
+<br>
+<hr>
+<br>
+WORK EXPERIENCE:
+<p>Currently A Student In the German University in Cairo Since October, 2013.</p>
+-Interned as a Helicopter Technical Assistant at Petrolium Air Services, Summer 2015. <br>
+-Interned as a Junior Consultant for Pistelli.
+<br>
+<hr>
+<br>
+SKILLS:<br>
+<br>
+-Fluent in English, Arabic, and German. <br>
+-Experience with HTML ,Java, Sql, Javascript, C#, and C++. <br>
+-Well Experienced with Microsoft Office. <br>
+<br>
+<hr>
+<br>
+EDUCATION:
+<br>
+Studying Business Informatics at the German University in Cairo<br>
+October 2013 - June 2017
+<br>
+<hr>
+
+
+
+
+</div>
+
+
+</div>
+</body>
+
+<style>
+nav {
+	width:250px;
+	background-color: white;
+	color: black;
+	padding: 5px;
+	float:left;
+	height:auto;
+	border:10px solid rgba (0,255,0,.5);
+}
+#section {
+	background-color: black;
+	color:white;
+	width:980px;
+	float:left;
+	padding:10px;
+	height:auto;
+}
+</style>
+</html>
