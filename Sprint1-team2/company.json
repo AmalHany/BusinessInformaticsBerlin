@@ -1,0 +1,12 @@
+[ {
+"name": "addidas " ,
+"type": "sport",
+ " Product " : [
+   { "Quantity" : 12, 
+     "available": true, 
+     "Name": " super star", 
+     "Price": 100, 
+"Category":"shoe"
+      }]
+}
+]
