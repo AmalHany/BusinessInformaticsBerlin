@@ -8,7 +8,7 @@ $scope.chosenproduct = ProductsSrv.getSelectedProduct();
 
 ProductsSrv.getProduct(ProductsSrv.getSelectedProduct()).success(function (data){
 	$scope.products = data;
-	console.log('nadeen fil CTRL');
+	console.log('Mahmoud fil CTRL');
 });
 
 });
