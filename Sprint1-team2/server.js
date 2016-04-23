@@ -1,8 +1,6 @@
 var app     = require('./app/app');
 
-app.listen(3000, function(){
+app.listen('3000', function(){
   console.log('[OK] => HTTP Server listening on http://localhost:3000');
-  require('./app/db').init('mongodb://localhost:27017/SexySabo3a' );
-  console.log('hey babe');
-
+  require('./app/db').init('mongodb://localhost:27017/sebaie' );
 });
