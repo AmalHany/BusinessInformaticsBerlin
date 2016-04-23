@@ -1,5 +1,5 @@
 [
-   /*{ "Name": "Super Star", 
+   { "Name": "Super Star", 
      "Brand": "Adidas",
      "Price": 100, 
      "Category":"Sports Wear",
@@ -23,7 +23,7 @@
     "Quantity" : 12, 
      "available": true
       },
-   */   { "Name": "Air Force", 
+     { "Name": "Air Force", 
      "Brand": "Nike",
      "Price": 100, 
      "Category":"Sports Wear",

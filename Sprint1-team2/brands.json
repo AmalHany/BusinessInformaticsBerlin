@@ -1,11 +1,11 @@
-[ /*{
+[ {
 "Name": "Adidas" ,
 "Category": "Sports Wear"
 },
 {
 "Name": "Nike" ,
 "Category": "Sports Wear"
-},*/
+},
 {
 "Name": "Puma" ,
 "Category": "Sports Wear"
