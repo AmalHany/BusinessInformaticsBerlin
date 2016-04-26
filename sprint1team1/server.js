@@ -4,7 +4,7 @@ var express           = require('express'),
     mongoose          = require('mongoose'),
     signupController = require('./server/controllers/signup-controller');
 
-
+//Random Comment ftw
 mongoose.connect('mongodb://localhost:27017/shopialmedia');
 
 app.use(bodyParser());
