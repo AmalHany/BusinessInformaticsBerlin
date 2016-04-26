@@ -1,5 +1,6 @@
 /**
  * Products Service
+ // linking between the controller and the server side 
  */
 App.factory('ProductsSrv', function ($http) {
      return {
