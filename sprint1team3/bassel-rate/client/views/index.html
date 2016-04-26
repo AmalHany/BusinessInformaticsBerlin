@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html ng-app="ratingApp">
+<head>
+	<meta charset = "utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<title></title>
+<meta name = "description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div ng-controller="ratingController">
+<h1> Total Ratings {{rating.length}} </h1>
+<ul> 
+<li ng-repeat = "rate in rating">
+	{{rate.rating}}
+</li>  
+</ul>
+	<form ng-submit="createRate()">
+		<input
+			type="text" placeholder="rate rating" ng-model = "rateRating">
+		</input>
+		<button type = "submit">RATE</button>
+	</form>
+
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/controllers/rating-controller.js"></script>
+</body>
+</html>
