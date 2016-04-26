@@ -1,0 +1,47 @@
+
+  <div class="row">
+    <div class="jumbotron banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p style='font-size: 45px; text-align: center'>
+              Welcome to my Shopping Website!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="jumbotron">
+                <h3>Start searching for your favourite products</h3>
+                
+                <input name="products"
+                id="products"
+                type="text"
+                placeholder="Enter product name..."
+                ng-model="selectedProduct"
+                uib-typeahead="product.Name for product in Products | filter:$viewValue | limitTo:10"
+                class="form-control",
+                typeahead-on-select="SetProduct($item.Name)">
+                 <br>
+                <br>
+              <button href="#/products" type="button" class="btn btn-primary" id='btnSearch' ng-click='SearchProducts()'>Search </button>
+ 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  //Shopping cart
+<div class="row">
+          <div class="col-sm-4">
+            <div class="jumbotron">
+            <p style='font-size: 45px; text-align: center'>
+            <img src="/Users/alaaelshalakany/Desktop/xs.png" alt="shopping cart" style="float:left;width:18px;height:18px;">
+                <h3>The Shopping Cart </h3>
+
+                <button href="#/Remove" type="button" class="btn btn-primary" id='btnSearch' ng-click='deleteOne'> Remove item </button>
+
+</div>
+    </div>
+  </div>
