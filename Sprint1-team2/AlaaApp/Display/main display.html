@@ -1,0 +1,49 @@
+<!doctype html>
+<html ng-app = "cartAppContinued">
+<head>
+ <!-- META -->
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:50px; }
+    </style>
+
+   
+</head>
+
+<body style="background-color:lightgrey;">
+
+
+
+<div class="jumbotron text-center">
+            <h3> RemoveFromCart</h3>
+        </div>
+
+
+
+<div ng-controller = "cartRemoverController">
+<form ng-submit = "removefromcart()"> 
+<label> Product : </label>
+<input type="text" placeholder="Enter your product" ng-model="userProd"></input>
+<BR>
+<label> Price: </label>
+<input type="text" placeholder="Enter your price" ng-model="userPrice" ></input>
+<BR>
+<button type="remove" onclick = "return confirmation ('Item(s) Removed Successfully')"> Sign Up </button>
+</form>
+</div>
+
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+      <script type="text/javascript" src="/js/app.js"></script>
+      <script type="text/javascript" src="/js/RemoveFromCartApp.js"></script>
+  
+</body>
+</html>
