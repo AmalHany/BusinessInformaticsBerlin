@@ -18,4 +18,9 @@ App.config(function($routeProvider) {
             templateUrl : '/partials/products.html',
             controller  : 'productsCtrl'
         });
+        
+// tried solving this core file yet i cant understand what it really does
+
+
+
 });

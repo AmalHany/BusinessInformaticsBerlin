@@ -28,7 +28,24 @@
  
             </div>
           </div>
+          <div class="col-sm-4">
+            <div class="jumbotron">
+                <h3>Start searching for your favourite brands .......</h3>
+                
+                <input name="brands"
+                id="brands"
+                type="text"
+                placeholder="Enter brand name..."
+                ng-model="selectedBrand"
+                uib-typeahead="brand.Name for brand in Brands | filter:$viewValue | limitTo:10"
+                class="form-control",
+                typeahead-on-select="SetBrand($item.Name)">
+                 <br>
+                <br>
+              <button href="#/brands" type="button" class="btn btn-primary" id='btnSearch' ng-click='SearchBrands()'>Search </button>
         </div>
       </div>
     </div>
+  </div>
+ </div>
   </div>
