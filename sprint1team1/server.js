@@ -14,6 +14,17 @@ app.get('/', function (req, res) {
 });
 
 
+app.get('/login.html', function(req, res){
+	res.sendFile(__dirname + '/client/views/login.html'); //Needs to be called for each page that wishes to be called
+
+});
+
+app.get('/product.html', function(req, res){
+	res.sendFile(__dirname + '/client/views/product.html'); //Needs to be called for each page that wishes to be called
+
+});
+
+
 app.use('/js', express.static(__dirname + '/client/js'));
 
 
