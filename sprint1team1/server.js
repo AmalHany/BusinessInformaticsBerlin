@@ -5,6 +5,7 @@ var express           = require('express'),
     signupController = require('./server/controllers/signup-controller');
 
 //Random Comment ftw
+//Another one -DJ Khaled
 mongoose.connect('mongodb://localhost:27017/shopialmedia');
 
 app.use(bodyParser());
