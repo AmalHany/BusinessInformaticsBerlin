@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html ng-app="productreviewApp">
+<head>
+<meta charset = "utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<title></title>
+	<meta name = "description" content="">
+	<meta name = "viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: lightblue">
+<div ng-controller = "productreviewsController">
+	<h1 style="text-align: center;">{{productreviews.length}} reviews</h1>
+	<ul>
+		<li style="text-align: center;" ng-repeat="productreview in productreviews"> 
+		{{productreview.content}}
+		</li>
+	</ul>
+	<form ng-submit="createProductreview()">
+		<input type="text" placeholder="Productreview content" ng-model="productreviewContent"></input>
+		<button type="sumbit">add</button>
+	</form>
+
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/controllers/productreviews-controller.js"></script>
+</body>
+</html>

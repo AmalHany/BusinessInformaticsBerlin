@@ -1,0 +1,9 @@
+{
+  "name": "database",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "mongoose": "^4.4.13",
+    "r": "0.0.5"
+  }
+}
