@@ -51,10 +51,10 @@
 <BR>
 <button type="submit" onclick = "return confirm ('You have submited your draft')"> Submit Draft </button>
 <button type ="submit" onclick = "window.open('/');" id = "homeButt"> Home </button>
+<button type ="submit" onclick = "window.open('profile.html');" id = "profButt"> Profile</button>
 </form>
 </div>
 
-    
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
       <script type="text/javascript" src="/js/app.js"></script>
@@ -63,6 +63,21 @@
 </body>
 
 <style>
+#profButt{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    transition: .5s ease;
+    left : 450px; 
+    top :185px; 
+}
+
 #homeButt {
     background-color: #008CBA;
     border: none;
@@ -74,7 +89,7 @@
     font-size: 16px;
     position: absolute;
     transition: .5s ease;
-    left : 550px; 
+    left : 650px; 
     top :185px;
 }
 
