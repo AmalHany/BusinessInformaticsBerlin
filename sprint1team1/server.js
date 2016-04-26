@@ -26,6 +26,11 @@ app.get('/product.html', function(req, res){
 });
 
 
+app.get('/profile.html', function(req, res){
+	res.sendFile(__dirname + '/client/views/profile.html'); //Needs to be called for each page that wishes to be called
+
+});
+
 app.use('/js', express.static(__dirname + '/client/js'));
 
 
@@ -33,6 +38,6 @@ app.use('/js', express.static(__dirname + '/client/js'));
 app.get('/api/users', signupController.list);
 app.post('/api/users', signupController.create);
 
-app.listen(8080, function() {
+app.listen(3000, function() {
   console.log('I\'m Listening...');
 })
