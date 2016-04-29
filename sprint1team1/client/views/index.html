@@ -1,6 +1,6 @@
 <!doctype html>
-<html ng-app = "signupApp">
-<head>
+<html ng-app = "signupApp"> <!--Tells the html page to load our angular module-->
+<head>                
     <!-- META -->
 
     
@@ -15,7 +15,7 @@
         body                    { padding-top:50px; }
     </style>
 
-   
+   <!--Html styling stuff-->
 </head>
 
 <body style="background-color:lightgrey;">
@@ -24,7 +24,7 @@
 <a class="btn btn-primary" href= "product.html" role="button">Products</a>
 <a2 class="btn btn-primary" href= "offers.html" role="button">Offers</a2>
 <a3 class="btn btn-primary" href= "search.html" role="button">Search</a3>
-
+<!--Couple of cool buttons loaded through bootstrap, downside if you dont have internet the buttons wont load. Learned that the hard way-->
 
 <div class="jumbotron text-center">
             <h1>Welcome to ShopialMedia</h1>
@@ -33,11 +33,11 @@
 
 <h2> Sign up if you haven't already </h2>
 
-<div ng-controller = "signupController">
-<form ng-submit = "createUser()"> 
+<div ng-controller = "signupController"> <!--This tells the division to use the signup controller-->
+<form ng-submit = "createUser()">  <!--When this form is submitted it will call our createUser method in the controller-->
 <label> Email : </label>
 <input type="text" placeholder="Enter your Email" ng-model="userEmail" id="textEmail"></input>
-<BR>
+<BR> <!--the ngmodel just names the textbox, this is used in our controller to identify our data-->
 <label> Password: </label>
 <input type="password" placeholder="Enter your password" ng-model="userPass" id="textPass"></input>
 <BR>
@@ -51,8 +51,8 @@
 <input type="text" placeholder="Enter your Age" ng-model="userAge" id=t extAge></input>
 <BR>
 <button type="submit" onclick = "return confirm ('You have signedup')"> Sign Up </button>
-
-<button type ="submit" onclick = "window.open('login.html');"> Login </button>
+<!--Return confirm just creates a pop up-->
+<button type ="submit" onclick = "window.open('login.html');"> Login </button> <!--window.open links to another site-->
 </form>
 </div>
 
@@ -61,7 +61,7 @@
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
       <script type="text/javascript" src="/js/app.js"></script>
       <script type="text/javascript" src="/js/controllers/signup-controller.js"></script>
-  
+      <!--Calls the different scripts to use, angular, angular resource. Its also essential to call our module and controller, however it HAS to be in the SAME order, module first, controller second, else it won't work and you'll be hunted by undefined errors for the rest of your days. -->
 </body>
 
 <style>
@@ -153,6 +153,6 @@ h7 {
     top: 475px;
 }
 </style>
-
+<!--CSS Mumbojumbo-->
 </html>
 
