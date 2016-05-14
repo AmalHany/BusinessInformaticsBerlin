@@ -1,0 +1,9 @@
+{
+   "name": "",
+  
+   "dependencies": {
+     "body-parser" : "1.15.0", 
+     "express"     : "*",
+     "mongodb"     : "2.1.16" 
+     }
+ }
