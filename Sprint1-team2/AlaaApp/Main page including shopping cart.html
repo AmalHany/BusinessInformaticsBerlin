@@ -28,24 +28,20 @@
  
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="jumbotron">
-                <h3>Start searching for your favourite brands .......</h3>
-                
-                <input name="brands"
-                id="brands"
-                type="text"
-                placeholder="Enter brand name..."
-                ng-model="selectedBrand"
-                uib-typeahead="brand.Name for brand in Brands | filter:$viewValue | limitTo:10"
-                class="form-control",
-                typeahead-on-select="SetBrand($item.Name)">
-                 <br>
-                <br>
-              <button href="#/brands" type="button" class="btn btn-primary" id='btnSearch' ng-click='SearchBrands()'>Search </button>
         </div>
       </div>
     </div>
   </div>
- </div>
+  //Shopping cart
+<div class="row">
+          <div class="col-sm-4">
+            <div class="jumbotron">
+            <p style='font-size: 45px; text-align: center'>
+            <img src="/Users/alaaelshalakany/Desktop/xs.png" alt="shopping cart" style="float:left;width:18px;height:18px;">
+                <h3>The Shopping Cart </h3>
+
+                <button href="#/Remove" type="button" class="btn btn-primary" id='btnSearch' ng-click='deleteOne'> Remove item </button>
+
+</div>
+    </div>
   </div>

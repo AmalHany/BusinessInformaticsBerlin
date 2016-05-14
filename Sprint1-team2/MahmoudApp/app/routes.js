@@ -80,6 +80,25 @@ module.exports = function(app,mongo) {
         res.send(products);
       });
      }); 
+    
+ /* ROUTE FOR SEARCHING BRANDS */
+    app.get('/api/search/:brand', function(req, res) {
+
+                console.log("in search for brand");
+      var bra = req.params['brand'];
+    
+      console.log(bra);
+     
+
+    mongo.db().collection('brands').find({
+          "Name" : bra.toString(),
+          
+          
+      }).toArray(function (err, brands){
+        if (err) cb (err, null);
+        res.send(brands);
+      });
+     }); 
           
 
 }
