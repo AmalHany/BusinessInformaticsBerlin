@@ -3,6 +3,7 @@ var express           = require('express'),
     bodyParser        = require('body-parser'),
     mongoose          = require('mongoose'),
     signupController = require('./server/controllers/signup-controller'),
+    offerController  = require('./server/controllers/offer-controller'),
     bDraftController = require('./server/controllers/businessdraft-controller');
 
 /*
@@ -41,6 +42,11 @@ app.get('/product.html', function(req, res){
 });
 
 
+app.get('/createOffer.html', function(req, res){
+  res.sendFile(__dirname + '/client/views/createOffer.html'); 
+
+});
+
 app.get('/profile.html', function(req, res){
 	res.sendFile(__dirname + '/client/views/profile.html'); 
 
@@ -59,7 +65,8 @@ app.get('/api/users', signupController.list); //Get --> gets data from the datab
 app.post('/api/users', signupController.create);//Post --> Inserts into the database. These are Verbs.
 app.get('/api/bDrafts', bDraftController.list);
 app.post('/api/bDrafts', bDraftController.create);
-
+app.get('/api/offers', offerController.list);
+app.post('/api/offers', offerController.create);
 
 app.listen(3000, function() { //Tells the server to listen on a certain port. In this case 3000.
   console.log('I\'m Listening...');
