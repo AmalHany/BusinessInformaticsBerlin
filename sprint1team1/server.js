@@ -41,6 +41,11 @@ app.get('/product.html', function(req, res){
 });
 
 
+app.get('/createOffer.html', function(req, res){
+  res.sendFile(__dirname + '/client/views/createOffer.html'); 
+
+});
+
 app.get('/profile.html', function(req, res){
 	res.sendFile(__dirname + '/client/views/profile.html'); 
 

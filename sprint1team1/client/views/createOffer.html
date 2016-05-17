@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
 
-    <title>Welcome to Shopial Media</title>
+    <title>Create An Offer</title>
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
     <style>
@@ -19,36 +19,55 @@
 </head>
 <body style="background-color:lightgrey;">
 <div class="jumbotron text-center">
-            <h1>Welcome to ShopialMedia</h1>
+            <h1>Create An Offer</h1>
         </div>
 
 <a class="btn btn-primary" href= "product.html" role="button">Products</a>
 <a2 class="btn btn-primary" href= "offers.html" role="button">Offers</a2>
 <a3 class="btn btn-primary" href= "search.html" role="button">Search</a3>
 
+<button type ="submit" onclick = "window.open('/');" id = "homeButt"> Home </button>
+<button type ="submit" onclick = "window.open('profile.html');" id = "profButt"> Profile</button>
 
-<h2> Hello! Welcome to your Profile!</h2>
-<div>
-<form>
-<label>Email : </label>
-    <label> insert Email here</label>
+<div ng-controller = "offerController"> <!--This tells the division to use the signup controller-->
+<form ng-submit = "createOffer()">  <!--When this form is submitted it will call our createUser method in the controller-->
+<label> Product Name: </label>
+<input type="text" placeholder="Enter your Product Name" ng-model="prodName" id="textProd"></input>
+<BR> <!--the ngmodel just names the textbox, this is used in our controller to identify our data-->
+<label> Previous Price: </label>
+<input type="text" placeholder="Enter the Previous Price" ng-model="prevPrice" id="textPrice"></input>
 <BR>
-<label>First Name: </label>
-    <label> insert Fname here </label>
+<label> Offer: </label>
+<input type="text" placeholder="Enter your Offer" ng-model="prodOffer" id="prodOffer"></input>
 <BR>
-<label>Last Name: </label>
-    <label> insert Lname here </label>
-<BR>
-<label> Age: </label>
-    <label> insert Age here</label>
+<button type="submit" onclick = "return confirm ('You have submitted your offer!')"> Create Offer </button>
+<!--Return confirm just creates a pop up-->
 </form>
 </div>
-<button type ="submit" onclick = "window.open('/');" id = "homeButt"> Home </button>
-<button type ="submit" onclick = "window.open('/BusinessDraft.html');" id = "bDraft"> Create Your Business Draft </button>
-<button type ="submit" onclick = "window.open('/createOffer.html');" id = "createOffer"> Create Offer </button>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+      <script type="text/javascript" src="/js/app.js"></script>
+      <script type="text/javascript" src="/js/controllers/signup-controller.js"></script>
+
 </body>
-<style>
-#bDraft {
+<style >
+    #homeButt {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    transition: .5s ease;
+    left : 650px; 
+    top :185px;
+}
+
+#profButt{
     background-color: #008CBA;
     border: none;
     color: white;
@@ -60,36 +79,18 @@
     position: absolute;
     transition: .5s ease;
     left : 450px; 
-    top :185px;
+    top :185px; 
 }
-#createOffer {
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: absolute;
-    transition: .5s ease;
-    left : 150px; 
-    top :185px;   
+
+input {
+  width: 200px;
 }
-#homeButt {
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: absolute;
-    transition: .5s ease;
-    left : 850px; 
-    top :185px;
+
+label {
+  display: inline-block;
+  width: 125px;
 }
+
 a {
     position: absolute;
     transition: .5s ease;
@@ -114,3 +115,4 @@ a3 {
 
 </style>
 </html>
+</style>
