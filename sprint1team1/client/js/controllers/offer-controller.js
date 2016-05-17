@@ -1,11 +1,7 @@
 app.controller('offerController', ['$scope', '$resource', function ($scope, $resource) {
 	var Offer = $resource('/api/offers');
-/*the app is the module we just created in the app.js, it calls the controller method which first
-takes its name, then the scope, and the resource and passes them as parameters in the function
-User just tells angular that the resources is called by the api from the collection Users, within
-our database. 
 
-*/
+
 	Offer.query(function (results) {
     $scope.offer = results;
   });
