@@ -4,6 +4,7 @@ var express           = require('express'),
     mongoose          = require('mongoose'),
     signupController = require('./server/controllers/signup-controller'),
     offerController  = require('./server/controllers/offer-controller'),
+    prodController   = require('./server/controllers/product-controller'),
     bDraftController = require('./server/controllers/businessdraft-controller');
 
 /*
@@ -41,8 +42,8 @@ app.get('/offers.html', function(req, res){
 
 });
 
-app.get('/product.html', function(req, res){
-	res.sendFile(__dirname + '/client/views/product.html'); 
+app.get('/listProduct.html', function(req, res){
+	res.sendFile(__dirname + '/client/views/listProduct.html'); 
 
 });
 
@@ -72,6 +73,8 @@ app.get('/api/bDrafts', bDraftController.list);
 app.post('/api/bDrafts', bDraftController.create);
 app.get('/api/offers', offerController.list);
 app.post('/api/offers', offerController.create);
+app.get('/api/products', prodController.list);
+app.post('/api/products', prodController.create);
 
 app.listen(3000, function() { //Tells the server to listen on a certain port. In this case 3000.
   console.log('I\'m Listening...');

@@ -1,5 +1,5 @@
 <!doctype html>
-<html >
+<html ng-app = "signupApp">
 <head>
     <!-- META -->
 
@@ -19,32 +19,49 @@
 </head>
 <body style="background-color:lightgrey;">
 <div class="jumbotron text-center">
-            <h1>Welcome to ShopialMedia</h1>
+            <h1>List Your Product</h1>
         </div>
 
 
-<h2> Hello! Welcome to your Profile!</h2>
-<div>
-<form>
-<label>Email : </label>
-    <label> insert Email here</label>
+<h2> List your product now!</h2>
+
+<div ng-controller = "prodController"> <!--This tells the division to use the signup controller-->
+<form ng-submit = "createProduct()">  
+<label> Product Name: </label>
+<input type="text" placeholder="Enter your Product Name" ng-model="prodName" id="textProd"></input>
+<BR> 
+<label> Price: </label>
+<input type="text" placeholder="Enter the Price" ng-model="prodPrice" id="textPrice"></input>
 <BR>
-<label>First Name: </label>
-    <label> insert Fname here </label>
+<label> Description: </label>
+<input type="text" placeholder="Enter your product description" ng-model="prodDesc" id="prodDesc"></input>
 <BR>
-<label>Last Name: </label>
-    <label> insert Lname here </label>
-<BR>
-<label> Age: </label>
-    <label> insert Age here</label>
+<button type="submit" onclick = "return confirm ('You have listed your Product!')"> List Product</button>
+
 </form>
 </div>
+
 <button type ="submit" onclick = "window.open('/');" id = "homeButt"> Home </button>
 <button type ="submit" onclick = "window.open('/BusinessDraft.html');" id = "bDraft"> Create Your Business Draft </button>
 <button type ="submit" onclick = "window.open('/createOffer.html');" id = "createOffer"> Create Offer </button>
-<button type = "submit" onclick = "window.open('/listProduct.html');" id = "products"> List Product</button>
+<button type = "submit" onclick = "window.open('/product.html');" id = "products"> Products</button>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+      <script type="text/javascript" src="/js/app.js"></script>
+      <script type="text/javascript" src="/js/controllers/product-controller.js"></script>
+
+
 </body>
 <style>
+input {
+  width: 200px;
+}
+
+label {
+  display: inline-block;
+  width: 125px;
+}
 #bDraft {
     background-color: #008CBA;
     border: none;
