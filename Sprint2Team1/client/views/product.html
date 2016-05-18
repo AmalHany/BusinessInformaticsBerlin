@@ -30,9 +30,10 @@
    <ul>
     <li ng-repeat = "product in products">
 
-        Offered Product: {{offer.prodName}},
-        Was: {{offer.prevPrice}},
-        Now: {{offer.prodOffer}}
+        Product: {{product.prodName}},
+        Price: {{product.prodPrice}},
+        Description: {{product.prodDesc}},
+        Category: {{product.prodCateg}}
 
     </li>
     </ul>
@@ -40,9 +41,8 @@
 </div>
 
 <button type ="submit" onclick = "window.open('/');" id = "homeButt"> Home </button>
-<button type ="submit" onclick = "window.open('/BusinessDraft.html');" id = "bDraft"> Create Your Business Draft </button>
-<button type ="submit" onclick = "window.open('/createOffer.html');" id = "createOffer"> Create Offer </button>
-<button type = "submit" onclick = "window.open('/product.html');" id = "products"> Products</button>
+<button type ="submit" onclick = "window.open('/profile.html');" id = "createOffer"> Profile </button>
+<button type = "submit" onclick = "window.open('/offers.html');" id = "products"> Offers</button>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
@@ -60,20 +60,6 @@ label {
   display: inline-block;
   width: 125px;
 }
-#bDraft {
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    position: absolute;
-    transition: .5s ease;
-    left : 575px; 
-    top :185px;
-}
 
 #products {
     background-color: #008CBA;
@@ -86,7 +72,7 @@ label {
     font-size: 16px;
     position: absolute;
     transition: .5s ease;
-    left : 350px; 
+    left : 550px; 
     top :185px;   
 }
 #createOffer {
@@ -114,7 +100,7 @@ label {
     font-size: 16px;
     position: absolute;
     transition: .5s ease;
-    left : 950px; 
+    left : 1100px; 
     top :185px;
 }
 a {
