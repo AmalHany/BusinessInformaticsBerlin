@@ -1,0 +1,113 @@
+<!doctype html>
+<html ng-app = "signupApp">
+<head>
+    <!-- META -->
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>Create An Offer</title>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:50px; }
+    </style>
+
+   
+</head>
+<body style="background-color:lightgrey;">
+<div class="jumbotron text-center">
+            <h1>Offers</h1>
+        </div>
+
+
+<button type ="submit" onclick = "window.open('/');" id = "homeButt"> Home </button>
+<button type ="submit" onclick = "window.open('profile.html');" id = "profButt"> Profile</button>
+
+<div ng-controller = "offerController"> <!--This tells the division to use the signup controller-->
+<h1> There are currently {{offers.length}} Offers!</h1>
+    <ul>
+    <li ng-repeat = "offer in offers">
+
+        Offered Product: {{offer.prodName}},
+        Was: {{offer.prevPrice}},
+        Now: {{offer.prodOffer}}
+
+    </li>
+    </ul>
+
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+      <script type="text/javascript" src="/js/app.js"></script>
+      <script type="text/javascript" src="/js/controllers/offer-controller.js"></script>
+
+</body>
+<style >
+    #homeButt {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    transition: .5s ease;
+    left : 750px; 
+    top :55px;
+}
+
+#profButt{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    transition: .5s ease;
+    left : 400px; 
+    top :55px; 
+}
+
+input {
+  width: 200px;
+}
+
+label {
+  display: inline-block;
+  width: 125px;
+}
+
+a {
+    position: absolute;
+    transition: .5s ease;
+    left : 250px; 
+    top :50px;
+}
+
+a2 {
+    position: absolute;
+    transition: .5s ease;
+    left : 550px; 
+    top : 50px;
+}
+a3 {
+
+    position: absolute;
+    transition: .5s ease;
+    left : 850px; 
+    top : 50px;
+       
+}
+
+</style>
+</html>
+</style>
