@@ -62,6 +62,11 @@ app.get('/BusinessDraft.html', function(req, res){
 	res.sendFile(__dirname + '/client/views/BusinessDraft.html'); 
 });
 
+
+app.get('/product.html', function(req, res){
+  res.sendFile(__dirname + '/client/views/product.html'); 
+});
+
 app.use('/js', express.static(__dirname + '/client/js')); //Tells the server to listen to our angular Module
 
 

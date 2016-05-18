@@ -1,0 +1,143 @@
+<!doctype html>
+<html ng-app = "signupApp">
+<head>
+    <!-- META -->
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>Welcome to Shopial Media</title>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:50px; }
+    </style>
+
+   
+</head>
+<body style="background-color:lightgrey;">
+<div class="jumbotron text-center">
+            <h1>Our Products</h1>
+        </div>
+
+
+
+
+<div ng-controller = "prodController"> <!--This tells the division to use the signup controller-->
+<h2> There are currently {{products.length}} products available </h2>
+   <ul>
+    <li ng-repeat = "product in products">
+
+        Offered Product: {{offer.prodName}},
+        Was: {{offer.prevPrice}},
+        Now: {{offer.prodOffer}}
+
+    </li>
+    </ul>
+
+</div>
+
+<button type ="submit" onclick = "window.open('/');" id = "homeButt"> Home </button>
+<button type ="submit" onclick = "window.open('/BusinessDraft.html');" id = "bDraft"> Create Your Business Draft </button>
+<button type ="submit" onclick = "window.open('/createOffer.html');" id = "createOffer"> Create Offer </button>
+<button type = "submit" onclick = "window.open('/product.html');" id = "products"> Products</button>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+      <script type="text/javascript" src="/js/app.js"></script>
+      <script type="text/javascript" src="/js/controllers/product-controller.js"></script>
+
+
+</body>
+<style>
+input {
+  width: 200px;
+}
+
+label {
+  display: inline-block;
+  width: 125px;
+}
+#bDraft {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    transition: .5s ease;
+    left : 575px; 
+    top :185px;
+}
+
+#products {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    transition: .5s ease;
+    left : 350px; 
+    top :185px;   
+}
+#createOffer {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    transition: .5s ease;
+    left : 100px; 
+    top :185px;   
+}
+#homeButt {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    transition: .5s ease;
+    left : 950px; 
+    top :185px;
+}
+a {
+    position: absolute;
+    transition: .5s ease;
+    left : 250px; 
+    top :50px;
+}
+
+a2 {
+    position: absolute;
+    transition: .5s ease;
+    left : 550px; 
+    top : 50px;
+}
+a3 {
+
+    position: absolute;
+    transition: .5s ease;
+    left : 850px; 
+    top : 50px;
+       
+}
+
+</style>
+</html>
