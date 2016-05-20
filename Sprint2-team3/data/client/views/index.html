@@ -20,19 +20,14 @@
  	{{draft.about}}
  </li>
  	
- </ul>
- <form ng-submit="createapprove()">
- 	
- 	
- 	<button type="submit" onclick = "return confirm ('Draft Rejected')">Reject</button>
-
- </form>
+ </ul>	
  </div>
 
  <div ng-controller = "approveController">
 <form ng-submit = "createApprove()">
 		<input type="text" placeholder="Business Name" ng-model="businessName"></input>
-		<button type="submit" onclick = "return confirm ('Draft Approved')">Approve</button>	
+		<button type="submit" onclick = "return confirm ('Draft Approved')">Approve</button>
+		<button type="submit" onclick = "window.open('/reject.html');">Reject</button>	
 </form>
  </div>
  
