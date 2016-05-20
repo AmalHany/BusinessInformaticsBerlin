@@ -1,0 +1,42 @@
+[
+   { "Name": "Super Star", 
+     "Brand": "Adidas",
+     "Price": 100, 
+     "Category":"Sports Wear",
+     "Type": "Shoes",
+    "Quantity" : 12, 
+     "available": true 
+      },
+       { "Name": "Stan Smith", 
+     "Brand": "Adidas",
+     "Price": 70, 
+     "Category":"Sports Wear",
+     "Type": "Shoes",
+    "Quantity" : 12, 
+     "available": true 
+      },
+      { "Name": "Nike Air", 
+     "Brand": "Nike",
+     "Price": 80, 
+     "Category":"Sports Wear",
+     "Type": "Shoes",
+    "Quantity" : 12, 
+     "available": true
+      },
+     { "Name": "Air Force", 
+     "Brand": "Nike",
+     "Price": 100, 
+     "Category":"Sports Wear",
+     "Type": "Shoes",
+    "Quantity" : 12, 
+     "available": true
+      },
+      { "Name": "Jordan Air", 
+     "Brand": "Nike",
+     "Price": 200, 
+     "Category":"Sports Wear",
+     "Type": "Shoes",
+    "Quantity" : 12, 
+     "available": true
+      }
+  ]
