@@ -13,26 +13,21 @@
  <font color="blue"><h1> There are {{drafts.length}} Drafts </h1></font>
  <ul>
  <li style="text-align: center;" ng-repeat="draft in drafts">
- 	{{draft.businessName}}, 
- 	{{draft.productName}} , 
- 	{{draft.brandName}} , 
- 	{{draft.price}} , 
- 	{{draft.about}}
+ 	<label> Business Name: </label>	{{draft.businessName}}<BR> 
+ 	<label> Product Name: </label> {{draft.productName}} <BR>
+ 	<label> Brand : </label> {{draft.brandName}}   <BR>
+ 	<label> Price: </label> {{draft.price}} 	  <BR>
+ 	<label> About: </label> {{draft.about}}		  <BR>
  </li>
  	
- </ul>
- <form ng-submit="createapprove()">
- 	
- 	
- 	<button type="submit" onclick = "return confirm ('Draft Rejected')">Reject</button>
-
- </form>
+ </ul>	
  </div>
 
  <div ng-controller = "approveController">
 <form ng-submit = "createApprove()">
 		<input type="text" placeholder="Business Name" ng-model="businessName"></input>
-		<button type="submit" onclick = "return confirm ('Draft Approved')">Approve</button>	
+		<button type="submit" onclick = "return confirm ('Draft Approved')">Approve</button>
+		<button type="submit" onclick = "window.open('/reject.html');">Reject</button>	
 </form>
  </div>
  
