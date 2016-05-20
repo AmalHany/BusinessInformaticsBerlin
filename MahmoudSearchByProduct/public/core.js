@@ -17,5 +17,15 @@ App.config(function($routeProvider) {
         .when('/products', {
             templateUrl : '/partials/products.html',
             controller  : 'productsCtrl'
+        })
+        
+         .when('/OmarTaher', {
+            templateUrl : '/partials/OmarTaher.html'
+        })
+         .when('/SalmaGamal', {
+            templateUrl : '/partials/SalmaGamal.html',
+
         });
+        
+
 });
