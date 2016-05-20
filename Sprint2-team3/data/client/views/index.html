@@ -21,12 +21,27 @@
  </li>
  	
  </ul>
+ <form ng-submit="createapprove()">
+ 	
+ 	
+ 	<button type="submit" onclick = "return confirm ('Draft Rejected')">Reject</button>
+
+ </form>
  </div>
- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
-<script type="text/javascript" src="/js/app.js"></script>
+
+ <div ng-controller = "approveController">
+<form ng-submit = "createApprove()">
+		<input type="text" placeholder="Business Name" ng-model="businessName"></input>
+		<button type="submit" onclick = "return confirm ('Draft Approved')">Approve</button>	
+</form>
+ </div>
  
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+ <script type="text/javascript" src="/js/app.js"></script>
+ <script type="text/javascript" src="/js/controllers/approve-controller.js"></script>
  <script type="text/javascript" src="/js/controllers/drafts-controller.js"></script>
+
 
 </body>
 </html>
