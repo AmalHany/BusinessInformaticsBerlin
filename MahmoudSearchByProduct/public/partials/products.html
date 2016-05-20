@@ -15,16 +15,11 @@
 
               <input type="radio" name="optionsRadios1" id="optionsRadios1" ng-model="$parent.selectedOption1" value={{chosenproduct.Name}} > <medium> Product Name: {{chosenproduct.Name}}          Category : {{chosenproduct.Category}}
               </medium>
-              <br>
-
-
-
-              
-              
+              <br>          
             </div>
             </div>
               <br/>
-              <span></span>
+              
             </div>
             <br/>
           </div>
@@ -32,4 +27,8 @@
       </div>
     </div>
   </div>
+               <button href="#/products" type="button" class="btn btn-primary" id='btnSearch' ng-click='Redirect()'>PayOnDelivery </button>
+
+               <button href="#/products" type="button" class="btn btn-primary" id='btnSearch' ng-click='RedirectSalma()'>PayOnOnline </button>
+ 
 </div>
