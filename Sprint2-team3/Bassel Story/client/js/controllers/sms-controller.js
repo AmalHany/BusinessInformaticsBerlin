@@ -9,9 +9,13 @@ var Smss = $resource('/api/smss')
 $scope.sendsms = function(){
 	var sms = new Smss();
 	sms.content = $scope.smscontent;
+	sms.to = $scope.to;
+	sms.from = $scope.from;
 	sms.$save(function(result){
     $scope.smss.push(result);
     $scope.smscontent = '';
+    $scope.to = '';
+    $scope.from = '';
 	});
 }
 

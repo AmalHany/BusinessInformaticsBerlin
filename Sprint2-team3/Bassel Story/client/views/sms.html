@@ -15,7 +15,15 @@
  	
  </ul>
  <form ng-submit="sendsms()">
+<label> To: </label> 
+	<input type = "text" placeholder="Enter Business Name" ng-model = "to"> </input>
+	<BR>
+<label> From: </label>
+	<input type = "text" placeholder="Enter Your Name" ng-model = "from"> </input>
+	<BR>
+ <label> Message: </label>
  	<input type="text" placeholder="content" ng-model="smscontent"></input>
+ 	<BR>
  	<button type="submit" onclick = "return confirm ('message sent')">send</button>
 
  </form>
