@@ -1,63 +1,134 @@
+<!--!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 
-<html><head>
-	<title>Your Shopping Cart</title>
-	<style>
-	#left{ 
-background-color:white;	
-font-family:calibri; 
-color:black; 
-font-size:14; 
-width:350px; 
-height:1000px;	
-float:left;
-}
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-#right{
-	background-color:white;	
-font-family:calibri; 
-color:black; 
-font-size:14; 
-width:900px; 
-height:900px;	
-float:right;
-}
+
+<!--html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"-->
+
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+ <title>Payment</title>
+ 
+
+
+<style type="text/css">
+
+dd { margin-left: 75px; } 
+#mode_margin { margin-left: 0px; }
+
 </style>
 
 </head>
+
 <body>
-<div id="left">
-<h1><b> Pay with your credit card </b></h1>
-<hr>
-<h2> Your payment information </h2> 
-<form action="demo_form.asp">
-First name: <input type="text" name="FirstName"><br><br>
-Last name: <input type="text" name="LastName"><br><br>
-Card number: <input type="text" name="CardNumber"><br><br>
-Card verification number: <input type="text" name="Card verification number"><br><br>
-E-mail: <input type="text" name="E-mail"><br><br> 
-Expiration Date: <input type="text" name="month"><br><br>
-<input type="Submit" value="Pay now"><br><br>
 
-<img src="visa and mastercard.gif" width="300" height="" "400"="" alt="Visa, mastercard or credit card"> 
-</form>
-</div>
+<!--form id="AriaPay" name="AriaPay" action="https://secure.future.stage.ariasystems.net/api/direct_post.php" method="post"-->   
 
-<div id="right">
 
-<h2> Your billing information </h2>
-<form action="demo_form.asp">
-Address 1: <input type="text" name="Address1"><br><br>
-Address 2: <input type="text" name="Address2"><br><br>
-City: <input type="text" name="city"><br><br>
-Country: <input type="text" name="country"><br><br>
-State: <input type="text" name="state"><br><br>
-Zip/Postal Code: <input type="text" name="postalcode"><br><br>
-Phone: <input type="text" name="phone"><br><br>
+<form id= "Pay on delivery" action="/path/myfunction" method="post">
+
+<!--form action  method="post"-->
+
+    <fieldset class="paymethodfieldset"> 
+        <dl>   
+        <dt>Name </dt> 
+        <dd>
+
+            <input id="name" type="text" name="name" value="" size="30"/ required>
+
+        </dd>
+
+        <dt id>Telephone Number</dt> 
+ <dd>
+
+            <input id="telephone_number" type="number" name="telephone_number" value="" size="30"/ required>
+
+        </dd>
+
+        </dd>             
+
+        <dt>Address</dt>             
+
+        <dd>
+
+            <input id="address" type="text" name="address" type="text" value="" size="30"/ required>
+
+
+        </dd>                              
+        <dt>Email</dt>             
+
+        <dd> 
  
+            <input id="email" type="email" name="email" size="30"/ required>              
+ 
+        </dd>                       
+
+        <div> 
+            <!--h2>           
+ 
+                <input type=radio name=formOfPayment id=formOfPayment value=CreditCard />
+
+                    Pay on delivery</h2-->             
+
+        </div>      
+
+            </td>                     
+
+
+                </tr>                  
+            </table>             
+
+        </dd>
+
+       
+        </dl>     
+
+</fieldset>     
+
+
+<fieldset>         
+     <dl>              
+      <input id = "Check requirements" type="submit" value="Pay on delivery" onclick= "return confirm ('Please fill the requirements');"> </input>
+
+      </dl>
 </form>
 
-</div>
+
+<!--script>
+function myFunction() {
+    var myWindow = window.open("", "_self");
+    myWindow.document.write("<p>Your Payment is successful</p>");
+}
+</script-->
+        
+<button type="Pay on delivery" onclick="alert('your payment was successful')">Pay on delivery!</button>
 
 
+       <!--button onclick="myFunction()">Submit </button-->
 
-</body></html>
+    </dl>     
+
+</fieldset> 
+</form> 
+</div> 
+ 
+<footer>
+
+<script src="https://secure.ariasystems.net/api/ariaCHD.js"></script>  
+<script language="javascript">
+
+          aria.environmentId ="future.stage";
+
+
+</script>
+
+</footer>
+
+</body>
+
+</html>
+
+</html>
