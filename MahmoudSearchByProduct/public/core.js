@@ -22,6 +22,11 @@ App.config(function($routeProvider) {
          .when('/OmarTaher', {
             templateUrl : '/partials/OmarTaher.html'
         })
+         .when('/alaa', {
+            templateUrl : '/partials/alaa.html'
+        })
+         
+
          .when('/SalmaGamal', {
             templateUrl : '/partials/SalmaGamal.html',
 
