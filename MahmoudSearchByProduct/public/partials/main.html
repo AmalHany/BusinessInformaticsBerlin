@@ -1,4 +1,4 @@
-
+<!-- 
   <div class="row"  >
     <div class="jumbotron banner" >
       <div class="container" style="background-image: url('x.jpg');">
@@ -23,13 +23,30 @@
                 uib-typeahead="product.Name for product in Products | filter:$viewValue | limitTo:10"
                 class="form-control",
                 typeahead-on-select="SetProduct($item.Name)">
+                 
+            </div>
+                                           <br>
+               Filter by a certain category: <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide"><br/>
+                <div>
+                 
+                  <div class="check-element animate-show" ng-show="checked">
+                 
+                    <input name="category"
+                id="category"
+                type="text"
+                placeholder="Enter category..."
+                ng-model="selectedCategory"
+                uib-typeahead="product.Category for product in Products | filter:$viewValue | limitTo:10"
+                class="form-control",
+                typeahead-on-select="SetCategory($item.Category)">
+                  </div>
+                </div>
+                <div>
                  <br>
                 <br>
               <button href="#/products" type="button" class="btn btn-primary" id='btnSearch' ng-click='SearchProducts()'>Search </button>
-
-
  
-            </div>
+
           </div>
         </div>
       </div>
@@ -52,4 +69,61 @@ document.getElementById("demo").innerHTML = Date();
  -->
 
   </div>
+  -->
+
+  <div class="row">
+    <div class="jumbotron banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p style='font-size: 45px; text-align: center'>
+              Welcome to my Shopping Website!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="jumbotron">
+                <h3>Start searching for your favourite products</h3>
+                
+                <input name="products"
+                id="products"
+                type="text"
+                placeholder="Enter product name..."
+                ng-model="selectedProduct"
+                uib-typeahead="product.Name for product in Products | filter:$viewValue | limitTo:10"
+                class="form-control",
+                typeahead-on-select="SetProduct($item.Name)">
+                 <br>
+                <br>
+               Filter by a certain category: <input type="checkbox" ng-model="checked" aria-label="Toggle ngHide"><br/>
+                <div>
+                 
+                  <div class="check-element animate-show" ng-show="checked">
+                 
+                    <input name="category"
+                id="category"
+                type="text"
+                placeholder="Enter category..."
+                ng-model="selectedCategory"
+                uib-typeahead="product.Category for product in Products | filter:$viewValue | limitTo:10"
+                class="form-control",
+                typeahead-on-select="SetCategory($item.Category)">
+                  </div>
+                </div>
+                <div>
+                 <br>
+                <br>
+              <button href="#/products" type="button" class="btn btn-primary" id='btnSearch' ng-click='SearchProducts()'>Search </button>
  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <marquee behavior="scroll" bgcolor="white" loop="-1" width="100%" >
+   <i>
+   
+            
+   <iframe src="http://free.timeanddate.com/clock/i57epe35/n37/fn7/fs26/tct/pct/ftb/th2" frameborder="0" width="154" height="33" allowTransparency="true"></iframe>
+  </div>
