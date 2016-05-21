@@ -19,5 +19,10 @@ $scope.Redirect = function() {
     // Redirect to the next page 
   };
 
+    $scope.Redirectalaa = function() {
+    $location.url('/alaa');
+    // Redirect to the next page 
+  };
+
 });
 
